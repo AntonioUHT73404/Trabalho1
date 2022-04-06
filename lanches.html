@@ -5,8 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lanchonete Mata Fome</title>
+	<script>
+		function confirmarPedido()
+		{
+		alert("Pedido Confirmado!\nPeça também seus acompanhamentos ;)");
+		}
+	</script>
+
 	<style>
-     
+
 
     #menu_h{
 		width:100%;
@@ -50,7 +57,19 @@
 		left: 90%;
 		top: 7%;
 	}
-
+	label{
+		color: white;
+		text-align: right;
+	}
+	legend{
+		color: white;
+		text-align: right;
+	}
+	fieldset{
+		text-align: right;
+		border: none;
+	}
+	
     </style>
 </head>
 <body background="imagens/lanche.png" style="width: 90%;">
@@ -79,6 +98,100 @@
 
 
 	<br><br><br><br><br>
+	<fieldset>
+		<legend>Escolha suas guarnições:</legend>
+		<div>
+			<label>Pão Parmesão e Orégano</label>
+			<input type = "checkbox" id = "pParmesaoOregano">
+		</div>
+		<div>
+			<label>Pão 9 Grãos Aveia e Mel</label>
+			<input type = "checkbox" id = "p9GaM">
+		</div>
+		<div>
+		  <label>Pão Três Queijos</label>
+		  <input type = "checkbox" id = "p3queijos">
+		</div>
+		<div>
+			<label>Hamburguer de Carne Bovina 90g</label>
+			<input type = "checkbox" id = "hc90g">
+		</div>
+		<div>
+			<label>Hamburguer de Carne Bovina 150g</label>
+			<input type = "checkbox" id = "hc150g">
+		</div>
+		<div>
+		  <label>Hamburguer Vegano</label>
+		  <input type = "checkbox" id = "hveg">
+		</div>
+		<div>
+		  <label>Filé de Frango 90g</label>
+		  <input type = "checkbox" id = "fileFrango90g">
+		</div>
+		<div>
+			<label>Filé de Frango 150g</label>
+			<input type = "checkbox" id = "fileFrango150g">
+		</div>
+		<div>
+			<label>Queijo Mussarela</label>
+			<input type = "checkbox" id = "queijoMussarela">
+		</div>
+		<div>
+			<label>Queijo Cheddar</label>
+			<input type = "checkbox" id = "queijoCheddar">
+		</div>
+		<div>
+			<label>Bacon</label>
+			<input type = "checkbox" id = "bacon">
+		</div>
+		<div>
+			<label>Picles</label>
+			<input type = "checkbox" id = "picles">
+		</div>
+		<div>
+			<label>Alface</label>
+			<input type = "checkbox" id = "alface">
+		</div>
+		<div>
+			<label>Tomate</label>
+			<input type = "checkbox" id = "tomate">
+		</div>
+		<div>
+			<label>Cebola</label>
+			<input type = "checkbox" id = "cebola">
+		</div>
+		<div>
+			<label>Cebola Caramelizada</label>
+			<input type = "checkbox" id = "cebolaCaramelizada">
+		</div>
+		<div>
+			<label>Cebola Onion</label>
+			<input type = "checkbox" id = "cebolaOnion">
+		</div>
+		<div>
+			<label>Molho da Casa</label>
+			<input type = "checkbox" id = "molhoDaCasa">
+		</div>
+		<div>
+		  <label>Molho de Alho</label>
+		  <input type = "checkbox" id = "molhoDeAlho">
+		</div>
+		<div>
+			<label>Molho Barbecue</label>
+			<input type = "checkbox" id = "molhoBarbecue">
+		</div>
+		<div>
+			<label>Ketchup</label>
+			<input type = "checkbox" id = "ketchup">
+		</div>
+		<div>
+			<label>Mostarda</label>
+			<input type = "checkbox" id = "mostarda">
+		</div>
+		<br>
+		<input type="button" onclick="confirmarPedido()" value="Confirmar Pedido"/>
+	  </fieldset>
+	  
 	
 </body>
 </html>
