@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" type="image/x-icon"  href="imagens/logo_lanchonete.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lanchonete Mata Fome</title>
+	<script>
+		function confirmarPedido()
+		{
+		alert("Pedido Confirmado!\nPeça também seus acompanhamentos ;)");
+		}
+	</script>
 	<style>
 	
 	body{
@@ -54,6 +61,19 @@
 		left: 90%;
 		top: 7%;
 	}
+	label{
+		color: black;
+		text-align: right;
+	}
+	legend{
+		color: black;
+		font-size: 25px;
+		text-align: right;
+	}
+	fieldset{
+		text-align: right;
+		border: none;
+	}
 
     </style>
 </head>
@@ -61,7 +81,7 @@
 
 	<nav>  
 		<div class="menu">    
-			<div id="logo">
+			<div id="logo"><a href="index.html">
 			<img src="imagens/logo_lanchonete.png" style="width: 100%;"/></div>
 
 			<div id="face"><a href="https://www.facebook.com/">
@@ -79,6 +99,53 @@
 			</ul>
 		</div>
 	</nav>
+	<br><br><br><br><br><br><br><br>
+	<fieldset>
+		<legend>Escolha suas bebidas:</legend>
+		<div>
+			<label>Água</label>
+			<input type = "checkbox" id = "agua">
+		</div>
+		<div>
+			<label>Água com Gás</label>
+			<input type = "checkbox" id = "aguaGas">
+		</div>		
+		<div>
+			<label>Água Tônica 350ml</label>
+			<input type = "checkbox" id = "aguaTonica">
+		</div>
+		<div>
+			<label>Schweppes Tônica</label>
+			<input type = "checkbox" id = "sTonica">
+		</div>	
+		<div>
+			<label>Schweppes Citrus</label>
+			<input type = "checkbox" id = "sCitrus">
+		</div>
+		<div>
+			<label>Refrigerantes Lata 350ml(Coca-Cola, Fanta, Pepsi)</label>
+			<input type = "checkbox" id = "refrigerantes">
+		</div>	
+		<div>
+			<label>Sucos com Água(Laranja, Maracujá, Limão)</label>
+			<input type = "checkbox" id = "sucosAgua">
+		</div>
+		<div>
+			<label>Sucos com Leite(Laranja, Maracujá, Limão)</label>
+			<input type = "checkbox" id = "sucosLeite">
+		</div>	
+		<div>
+			<label>Cervajas Lata 350ml(Heineken, Amstel, Skol, Brahma)</label>
+			<input type = "checkbox" id = "cervejaLata">
+		</div>
+		<div>
+			<label>Cervajas Litro(Heineken, Amstel, Skol, Brahma)</label>
+			<input type = "checkbox" id = "cervejaLitro">
+		</div>						
+
+		<br>
+		<input type="button" onclick="confirmarPedido()" value="Confirmar Pedido"/>
+	  </fieldset>
 
 
 </body>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" type="image/x-icon"  href="imagens/logo_lanchonete.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,12 +85,24 @@
     	font-size: 18px;			 /*Tamanho fonte*/
     	font-family: 'Indie Flower'; /*Fonte de texto*/
 	}
-    </style>
+	form{
+		text-align: center;
+		color: white;
+	}
+
+	.diaSemana{
+		text-align: center;
+		color: white;
+		font-size: 18px;
+		font-family: 'Indie Flower';
+	}
+
+</style>
 </head>
 <body>
 	<nav>  
 		<div class="menu">    
-			<div id="logo">
+			<div id="logo"><a href="index.html">
 			<img src="imagens/logo_lanchonete.png" style="width: 100%;"/></div>
 
 			<div id="face"><a href="https://www.facebook.com/">
@@ -122,7 +135,39 @@
 		</class>
 	</div> 
 
-	<br><br>
+	<br><br><br><br><br><br>
+
+	<div class="diaSemana">
+		<table style="width: 100%" >
+			<center>
+			<caption><h1>Horário de atendimento</h1></caption>
+				<thead>
+				<tr>
+					<th><p> Domingo</p></th>
+					<th>Segunda-feira</th>
+					<th>Terça-feira</th>
+					<th>Quarta-feira</th>
+					<th>Quinta-feira</th>
+					<th>Sexta-feira</th>
+					<th>Sábado</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><p> 18:00 as 23:59 </p></td>
+					<td><p> Fechado </p></td>
+					<td><p> 18:00 as 23:59 </p></td>
+					<td><p> 18:00 as 23:59 </p></td>
+					<td><p> 18:00 as 23:59 </p></td>
+					<td><p> 18:00 as 23:59 </p></td>
+					<td><p> 18:00 as 23:59 </p></td>
+				</tr>
+				</tbody>
+			</center>
+		</table>
+	</div>
+	
+	<br><br><br><br><br>
 
 	<center>
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24674.060118629524!2d-45.86197262328364!3d-23.1767329964122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4bc24c6c7af1%3A0x7a0e329cb08c3cba!2sMata%20Fome%20Lanches!5e0!3m2!1spt-BR!2sbr!4v1648902997560!5m2!1spt-BR!2sbr" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -149,5 +194,6 @@
 			</div>  	
 		</form>
 	</center>
+
 </body>
 </html>

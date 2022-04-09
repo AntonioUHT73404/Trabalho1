@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" type="image/x-icon"  href="imagens/logo_lanchonete.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lanchonete Mata Fome</title>
+	<script>
+		function confirmarPedido()
+		{
+		alert("Pedido Confirmado!\nPeça também seus acompanhamentos ;)");
+		}
+	</script>
 	<style>
 	
 	body{
@@ -54,14 +61,26 @@
 		left: 90%;
 		top: 7%;
 	}
-
+	label{
+		color: white;
+		text-align: right;
+	}
+	legend{
+		color: white;
+		font-size: 25px;
+		text-align: right;
+	}
+	fieldset{
+		text-align: right;
+		border: none;
+	}
     </style>
 </head>
 <body background="imagens/hotdog.jpg" style="width: 90%;">
 
 	<nav>  
 		<div class="menu">    
-			<div id="logo">
+			<div id="logo"><a href="index.html">
 			<img src="imagens/logo_lanchonete.png" style="width: 100%;"/></div>
 
 			<div id="face"><a href="https://www.facebook.com/">
@@ -71,7 +90,7 @@
 			<img src="imagens/logo_instagram.png" style="width:47%;"/></a></div>
 			    
 			<br><br><br>
-			<ul id="menu_h"> 			
+			<ul id="menu_h"> 	
 				<li><a href="lanches.html">LANCHES</a></li>
 				<li><a href="hot.html">HOT DOGS</a></li>
 				<li><a href="porcoes.html">PORÇÕES</a></li>
@@ -79,6 +98,92 @@
 			</ul>
 		</div>
 	</nav>
+	<br><br><br><br><br>
+	<fieldset>
+		<legend>Escolha suas guarnições:</legend>
+		<div>
+			<label>Pão Parmesão e Orégano</label>
+			<input type = "checkbox" id = "pParmesaoOregano">
+		</div>
+		<div>
+			<label>Pão 9 Grãos Aveia e Mel</label>
+			<input type = "checkbox" id = "p9GaM">
+		</div>
+		<div>
+		  <label>Pão Três Queijos</label>
+		  <input type = "checkbox" id = "p3queijos">
+		</div>
+		<div>
+			<label>1 Salsicha</label>
+			<input type = "checkbox" id = "1s">
+		</div>
+		<div>
+			<label>2 Salsichas</label>
+			<input type = "checkbox" id = "2s">
+		</div>
+		<div>
+		  <label>Salsicha Vegana</label>
+		  <input type = "checkbox" id = "sv">
+		</div>
+		<div>
+		  <label>Costela</label>
+		  <input type = "checkbox" id = "costela">
+		</div>
+		<div>
+			<label>Frango desfiado</label>
+			<input type = "checkbox" id = "fileDesfiado">
+		</div>
+		<div>
+			<label>Purê de Batata</label>
+			<input type = "checkbox" id = "pure">
+		</div>
+		<div>
+			<label>Batata Palha</label>
+			<input type = "checkbox" id = "batataPalha">
+		</div>
+		<div>
+			<label>Catupiry</label>
+			<input type = "checkbox" id = "catupiry">
+		</div>
+		<div>
+			<label>Cheddar</label>
+			<input type = "checkbox" id = "cheddar">
+		</div>
+		<div>
+			<label>Bacon</label>
+			<input type = "checkbox" id = "bacon">
+		</div>
+		<div>
+			<label>Vinagrete</label>
+			<input type = "checkbox" id = "vinagrete">
+		</div>
+		<div>
+			<label>Molho da Casa</label>
+			<input type = "checkbox" id = "molhoDaCasa">
+		</div>
+		<div>
+		  <label>Molho de Alho</label>
+		  <input type = "checkbox" id = "molhoDeAlho">
+		</div>
+		<div>
+			<label>Molho Barbecue</label>
+			<input type = "checkbox" id = "molhoBarbecue">
+		</div>
+		<div>
+			<label>Ketchup</label>
+			<input type = "checkbox" id = "ketchup">
+		</div>
+		<div>
+			<label>Mostarda</label>
+			<input type = "checkbox" id = "mostarda">
+		</div>
+		<div>
+			<label>Maionese</label>
+			<input type = "checkbox" id = "mostarda">
+		</div>
+		<br>
+		<input type="button" onclick="confirmarPedido()" value="Confirmar Pedido"/>
+	  </fieldset>
 
 </body>
 </html>

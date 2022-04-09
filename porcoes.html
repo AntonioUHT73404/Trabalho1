@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="icon" type="image/x-icon"  href="imagens/logo_lanchonete.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Lanchonete Mata Fome</title>
+	<script>
+		function confirmarPedido()
+		{
+		alert("Pedido Confirmado!\nPeça também seus acompanhamentos ;)");
+		}
+	</script>
 	<style>
      
 
@@ -50,6 +57,19 @@
 		left: 90%;
 		top: 7%;
 	}
+	label{
+		color: white;
+		text-align: right;
+	}
+	legend{
+		color: white;
+		font-size: 25px;
+		text-align: right;
+	}
+	fieldset{
+		text-align: right;
+		border: none;
+	}
 
     </style>
 </head>
@@ -57,7 +77,7 @@
 
 	<nav>  
 		<div class="menu">    
-			<div id="logo">
+			<div id="logo"><a href="index.html">
 			<img src="imagens/logo_lanchonete.png" style="width: 100%;"/></div>
 
 			<div id="face"><a href="https://www.facebook.com/">
@@ -75,10 +95,45 @@
 			</ul>
 		</div>
 	</nav>
-
-
-
 	<br><br><br><br><br>
+
+	<fieldset>
+		<legend>Escolha suas porção:</legend>
+		<div>
+			<label>Porção media de batata</label>
+			<input type = "checkbox" id = "pMdB">
+		</div>
+		<div>
+			<label>Porção grande de batata</label>
+			<input type = "checkbox" id = "pGdB">
+		</div>
+		<div>
+		  <label>Porção de mandioca frita</label>
+		  <input type = "checkbox" id = "pMandioca">
+		</div>
+		<div>
+			<label>Porção de tiras de frango</label>
+			<input type = "checkbox" id = "pTdF">
+		</div>
+		<div>
+			<label>Porção de polenta frita</label>
+			<input type = "checkbox" id = "pPF">
+		</div>
+		<div>
+		  <label>Porção de isca de peixe</label>
+		  <input type = "checkbox" id = "pIdP">
+		</div>
+		<div>
+		  <label>Porção de costelinha de porco</label>
+		  <input type = "checkbox" id = "pCdP">
+		</div>
+		
+		<br>
+		<input type="button" onclick="confirmarPedido()" value="Confirmar Pedido"/>
+	  </fieldset>
+	<br><br><br><br><br>
+
+
 	
 </body>
 </html>
