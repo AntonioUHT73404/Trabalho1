@@ -14,8 +14,36 @@
 	</script>
 
 	<style>
-
-
+	
+	.banner{
+		width: 100%;
+		height: 100%;
+	} 
+	.banner video{
+		position: fixed;
+		width: 100%;
+		height: 100%		;
+		top: 0%;
+		left: 0%;
+		object-fit: cover;
+	}
+	.banner .menu{
+		position: relative;
+		z-index: 7;
+	}
+	.banner label{
+		position: relative;
+		z-index: 7;
+	}
+	.banner legend{
+		position: relative;
+		z-index: 7;
+	}
+	.banner fieldset{
+		color: white;
+		position: relative;
+		z-index: 7;
+	}
     #menu_h{
 		width:100%;
 		list-style: none;
@@ -68,25 +96,29 @@
 		text-align: right;
 	}
 	fieldset{
+		color: white;
 		text-align: right;
 		border: none;
 	}
 	
     </style>
 </head>
-<body background="imagens/lanche.png" style="width: 90%;">
-
+<body>
+	<div class="banner">
+		<video autoplay muted loop>
+			<source src="/imagens/VIDEO.MP4" type="video/mp4">
+		</video>
+	
+		
 	<nav>  
 		<div class="menu">    
 			<div id="logo"><a href="index.html">
 			<img src="imagens/logo_lanchonete.png" style="width: 100%;"/></div>
-
 			<div id="face"><a href="https://www.facebook.com/">
 			<img src="imagens/logo_facebook.png" style="width:20%;"/></a></div>
-
 			<div id="insta"><a href="https://www.instagram.com/?hl=pt-br">
 			<img src="imagens/logo_instagram.png" style="width:47%;"/></a></div>
-			    
+			
 			<br><br><br>
 			<ul id="menu_h"> 			
 				<li><a href="lanches.html">LANCHES</a></li>
@@ -96,10 +128,8 @@
 			</ul>
 		</div>
 	</nav>
-
-
-
-	<br><br><br><br><br>
+		<br><br><br><br><br><br><br><br>
+	
 	<fieldset>
 		<legend>Escolha suas guarnições:</legend>
 		<div>
@@ -111,8 +141,8 @@
 			<input type = "checkbox" id = "p9GaM">
 		</div>
 		<div>
-		  <label>Pão Três Queijos</label>
-		  <input type = "checkbox" id = "p3queijos">
+		<label>Pão Três Queijos</label>
+		<input type = "checkbox" id = "p3queijos">
 		</div>
 		<div>
 			<label>Hamburguer de Carne Bovina 90g</label>
@@ -123,12 +153,12 @@
 			<input type = "checkbox" id = "hc150g">
 		</div>
 		<div>
-		  <label>Hamburguer Vegano</label>
-		  <input type = "checkbox" id = "hveg">
+		<label>Hamburguer Vegano</label>
+		<input type = "checkbox" id = "hveg">
 		</div>
 		<div>
-		  <label>Filé de Frango 90g</label>
-		  <input type = "checkbox" id = "fileFrango90g">
+		<label>Filé de Frango 90g</label>
+		<input type = "checkbox" id = "fileFrango90g">
 		</div>
 		<div>
 			<label>Filé de Frango 150g</label>
@@ -175,8 +205,8 @@
 			<input type = "checkbox" id = "molhoDaCasa">
 		</div>
 		<div>
-		  <label>Molho de Alho</label>
-		  <input type = "checkbox" id = "molhoDeAlho">
+		<label>Molho de Alho</label>
+		<input type = "checkbox" id = "molhoDeAlho">
 		</div>
 		<div>
 			<label>Molho Barbecue</label>
@@ -192,8 +222,7 @@
 		</div>
 		<br>
 		<input type="button" onclick="confirmarPedido()" value="Confirmar Pedido"/>
-	  </fieldset>
-	  
-	
+	</fieldset>
+</div>
 </body>
 </html>
